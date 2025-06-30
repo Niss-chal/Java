@@ -1,0 +1,53 @@
+Short Notes
+    Inheritance:
+        Inheritance a pillar of OOP that allows sublcass to inherit fields and methods of another class.
+        Subclass is also called child class and super class is also called parent class. It promotes code resuability.
+        Example:
+            class Example{
+                void eg(){
+                    System.out.println("Its an example");
+                }
+            } 
+            
+            class Task extends Example{
+                void task(){
+                    System.out.println("This is revision");
+                }
+            }
+
+    Getter and Setter Methods:
+        Getter and Setter methods are used to access and update private variables of a class.
+        A getter returns the value of a variable whereas setter updates the value.
+        Example:
+            class Example{
+                private String revision;
+
+                public void setRevision(String revision){
+                    this.revision=revision;
+                }
+
+                public String getRevision(){
+                    return revision;
+                }
+            }
+    
+    Try-catch block
+        A try-catch block is used for exception handling in Java. The code that might throw an exception goes in the try block, 
+        and the catch block handles the error to prevent program crashes.
+        Example:
+            try {
+                int a = 10 / 0;
+            } catch (ArithmeticException e) {
+                System.out.println("Cannot divide by zero");
+            }
+
+    do-while loop
+        A do-while loop is a control flow statement that executes the loop body at least once 
+        and then repeats as long as the condition is true. In do while, the loop runs first and then only condition is checked.
+        Example:
+            int i = 1;
+            do {
+                System.out.println(i);
+                i++;
+            } while (i <= 5);
+ 

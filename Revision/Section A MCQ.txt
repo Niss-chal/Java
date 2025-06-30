@@ -1,0 +1,12 @@
+1. Ans= c->string
+2. Ans=b->false
+3. Ans=c->constructor
+4. Ans=b->catch
+5. Ans=d->extends
+6. Ans=c->protected
+7. Ans=a->true
+8. Ans=b->the current class object
+9. Ans=d->default
+10. Ans=a->30Java1020
+11. Ans=c->it is used to initialize objects
+12. Ans=b->It belongs to the class, not an object

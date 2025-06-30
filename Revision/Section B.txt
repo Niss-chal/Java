@@ -1,0 +1,72 @@
+1. Explain the difference between abstract class and interface in Java. Provide one example for each. 
+Answer-->
+    Abstract class is made using Abstraction concept and uses abstract keyword. It can have abstract and non-abstract method i.e. methods without a body. 
+    It can also have variables and constructors. We use abstract classes when we want to share common code among related classes. 
+    Syntax:
+    abstract class Example{
+        abstract void eg();
+        void example(){
+            System.out.println("This is an example");
+        }
+    }
+
+    class Task extends Example{
+        void eg(){
+            System.out.println("Example for abstract class")
+        }
+    }
+
+    An interface in Java is a blueprint of a class that defines a set of abstract methods that a class must implement.
+    A class uses implements keyword to inherit from an interface and must provide implementations for all of its abstract methods.
+    It doesnt have any constructors or instance variables.
+    Syntax:
+    interface Example{
+        void eg();
+    }
+
+    class Revision implements Example{
+        public void eg(){
+            System.out.println("Example of inheritance);
+        }
+    }
+
+
+
+2. Describe the concept of polymorphism in Java with suitable examples. Differentiate between compile-time and runtime polymorphism. 
+Answer-->
+    Polymorphism consist of two words Poly and Morph. Poly means many and Morph means forms. Thus polymorphism means having many forms
+    allowing one interface to be used for different data types or classes. It enables object to behave differently
+    based on context, improving code resuability and flexibility. Two types of polymorphism are:
+    a. Compile time Polymorphism:
+        This is also called method overloading. It occurs when multiple methods have the same name but different parameters within the same class.
+        The method to call is determined at compile time. 
+        Example:
+
+            class Calculator {
+                int add(int a, int b) {
+                return a + b;
+            }
+                double add(double a, double b) {
+                return a + b;
+            }
+        }
+
+    b. Run time Polymorphism:
+        This method is also called method overriding. It happens when a subclass provides a specific implementation 
+        of a method already defined in the parent class. The method to call is determined at runtime based on the object type.
+        Example:
+
+            class Animal {
+                void sound() {
+                System.out.println("Animal makes sound");
+            }
+        }
+
+            class Dog extends Animal {
+                void sound() {
+                System.out.println("Dog barks");
+            }
+        }
+
+
+
