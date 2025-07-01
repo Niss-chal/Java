@@ -1,0 +1,53 @@
+1. Explain method overloading in Java with examples. How is it different from method overriding?
+Answer-->
+    Method overloading occurs when multiple methods in the same class have the same name
+    but different parameter lists(different type, number or order of parameters).
+    It's a type of compile-time polymorphism or static polymorphism.
+    Example:
+        class Example{
+            int add(int a, int b){
+                return a+b;
+            }
+
+            double add(double a, double b){
+                return a+b;
+            }
+        }
+
+    Here, add is overloaded with different parameter types.
+
+    Method overloading and overriding is quite different from each other. Method overloading happens if method name is same but parameter is different
+    while method overriding occurs if two methods has same name and parameters.
+    Method overloading happens in the same class whereas method overriding happens in subclass.
+    Method overloading is also called compile-time polymorphism while method overriding is called runtime polymorphism.
+
+2. What is the role of the super keyword in Java? Demonstrate its usage with a code example. 
+Answer-->
+    The super keyword in Java refers to the parent class and is used to access parent class variables, methods and constructors from a subclass.
+    This is helpful in inheritance when the child class wants to use or extend the behaviour of the parent class/
+        Example:
+            class Example{
+                String type="Revision";
+
+                void task(){
+                    System.out.println("Doing revision");
+                }
+                Example(){
+                    System.out.println("Example constructor called");
+                }
+            }
+
+            class Practice extends Example{
+                String type="Practice";
+                Practice(){
+                    super();   //Calls parent class constructor
+                }
+
+                void display(){
+                    super.task();  //Calls parent method
+                }
+            }
+
+    Thus, super keyword helps achieve code reusability and clarity in inheritance. It is especially useful
+    when child and parent classes have same variable name or overridden methods, and also ensures the parent 
+    constructor is called when needed.

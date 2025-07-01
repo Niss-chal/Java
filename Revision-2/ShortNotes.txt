@@ -1,0 +1,44 @@
+    Short Notes
+1. Java Class and Object:
+    A class in java is a blueprint or tempelate for creating objects. It defines variable(fields)
+    and methods(functions). An object is an instance of a class that holds real values and can call methods.
+    Example:
+        class Car {
+        String color = "Red";
+        void drive() {
+            System.out.println("Car is driving");
+            }
+        }   
+
+        public class Main {
+        public static void main(String[] args) {
+            Car c = new Car(); // object creation
+            c.drive();
+        }
+    }
+
+2. Logical Operators in Java
+    Logical operators are used to perform logical operations like (true/false checking) in conditional statements.
+    The return value in boolean. There are three logical operators in java.
+    Operator                     Description                Example
+    &&                           Logical AND                a>5 && b<10
+    ||                           Logical OR                 a>5 || b<10
+    !                            Logical Not                !(a == b)
+
+3. Access Modifiers
+    Access modifiers are the ones who controls visibility or scope of classes, methods and variables in java.
+    there are total four types of access modifiers. They are used in front of class or variables.
+    They are used to implement encapsulation and control access to sensitive data.
+    Modifier                                Access Level
+    public                                  Acessible from anywhere
+    private                                 Accessible only within the same class
+    protected                               Accessible in same package or subclass
+    default                                 Accessible within the same package
+
+4. Importance of main method
+    The main method is the starting point of every Java application. WHen you run a Java program, the Java Virtual Machine(JVM)
+    looks for the main method to begin execution. Without main method, program won't run and we'll get a runtime error.
+    Syntax:
+        public static void main(String[] args){
+            // your code
+        }

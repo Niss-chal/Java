@@ -1,0 +1,12 @@
+1. Ans= b ->int[] arr = {1,2,3}
+2. Ans= a ->2
+3. Ans= a ->extends
+4. Ans= d ->public
+5. Ans= c ->Compilation
+6. Ans= c ->Defining a method in a subclass that already exists in the parent class
+7. Ans= c ->8
+8. Ans= b ->char
+9. Ans= b ->4
+10. Ans= c ->Hiding implementation details and exposing only necessary parts
+11. Ans= b ->implements
+12. Ans= c ->do-while
