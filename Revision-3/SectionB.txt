@@ -1,0 +1,54 @@
+1. Define encapsulation. How is it implemented in Java? Provide an example using getter and setter methods.
+Answer-->
+    Encapsulation is one of pillars of Object-Oriented Programming and is the procress of hiding the internal 
+    data of a class and only allowing access through methods.It helps to protect the data and makes the program 
+    more secure and easier to manage. Encapsulation is done by making class variables
+    privare and creating public getter and setter methods to access and update the values safely.
+    Example:
+        class Student{
+            private String name;
+
+            public void setName(String name){
+                this.name=name;                
+            }
+
+            public String getName(){
+                return name;
+            }
+        }
+
+        public class Revision{
+            public static void main(String[] args){
+                Student student = new Student();
+                student.setName("Kamlesh");
+                System.out.println("Student name: "+sudent.getname());
+            }
+        } 
+
+2. Explain the concept of constructor changing in Java. Demonstrate it using the this() keyword with code.
+Answer-->
+    Constructor chaining in Java is the procress of calling one constructor fron another constructor wihtin the 
+    same class using the this() keyword. This helps in code reuse and avoiding duplication when multiple constructors
+    perform similar tasks. Constructor chaining helps to save time, reduces code duplication and makes code cleaner 
+    and easier to read.
+    Example:
+        class Car{
+            String brand;
+
+            Car(){
+                this("unknown");
+                System.out.println("Default constructor called");
+            }
+
+            Car(String b){
+                brand =b;
+                System.out.println("Brand is set to: " + brand);
+            }
+        }
+
+        public class Example{
+            public static void main(String[] args){
+                Car c1 = new Car();
+                Car c2 = new Car("Ferrari");
+            }
+        }

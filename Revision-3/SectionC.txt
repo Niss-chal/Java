@@ -1,0 +1,69 @@
+Short Notes:
+1. Object class in Java
+    In jaca, the object class is the root class of the entire class hierarchy. This means every class in Java
+    is a subclass of the object class, either directly or indirectly. The object class provides several 
+    useful methods that can be used by all Java objects, such as toString(), equals(),getClass(),etc
+    Example:
+        class Example{
+            String name="Revision";
+        }
+
+        public class Main{
+            public static voidd main(String[] args){
+                Example eg = new Example();
+                System.out.println(eg.count());
+            }
+        } 
+2. Keywords break vs continue
+    In Java, break and continue are control flow keywords used in loops like for, while or do-while. The break
+    statement is used to completely exit a loop or switch block when a certain condition is met. On the other hand,
+    the continue statement is used to skip the current iteration and move to the next one.
+    Example:
+        for(int i=1; i<=5; i++){
+            if(i==3)
+            break;
+            System.out.println(i); //Prints 1,2 
+        }
+
+        for (int i = 1; i <= 5; i++) {
+            if (i == 3) 
+            continue;
+            System.out.println(i);  // prints: 1, 2, 4, 5
+        }
+
+3. Use of instance of operator 
+    The instanceof operator in Java is used to check if an object belongs to a particular class or subclass. It returns
+    true if the object is an instance of the specified class, and false otherwise. This is very useful when we are
+    dealing with inheritance or polymorphism and want to check the actual type of an object before performing certain
+    operations. 
+    Example:
+        class Animal{
+
+        }
+
+        class Dog extends Animal{
+
+        }
+
+        public class Main{
+            public static void main(String[] args){
+                Dog dog = new Dog();
+                System.out.println(dog instanceof Animal);
+            }
+        }
+
+4. Difference between class and interface
+    A class in java is a blueprint used to create objects. It can contain variables, constructors, methods and can
+    be used to directly create objects. An interface, however, is a blueprint for abstract methods only. Interfaces are 
+    mainly used to achieve multiple inheritance, which is not possible with classes alone. While a class uses the class keyword 
+    any allows concrete implementation, an interface uses the interface keyword and cannot create objects directly.
+    Example:
+        class Animal{
+            void sound(){
+                System.out.println("Animal makes sound");
+            }
+        }
+
+        interface Bird{
+            void fly();
+        }
